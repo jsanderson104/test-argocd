@@ -1,11 +1,6 @@
 # This same file can also be found in repo TradeCalc-image.
 # This deploys a custom nginx image that I used Jenkins and Podman VM to build then push to docker.io
 ---
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: custom-nginx
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -40,5 +35,5 @@ spec:
     app: nginx
   ports:
     - protocol: TCP
-      port: 9090
+      port: 80
       targetPort: 9090
