@@ -11,10 +11,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: custom-nginx-deployment
+  namespace: my-custom-nginx
   labels:
     app: nginx
 spec:
-  replicas: 10
+  replicas: 3
   selector:
     matchLabels:
       app: nginx
@@ -33,6 +34,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: custom-image-svc
+  namespace: my-custom-nginx
 spec:
   type: LoadBalancer
   selector:
