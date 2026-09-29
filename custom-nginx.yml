@@ -1,5 +1,6 @@
 # This same file can also be found in repo TradeCalc-image.
 # This deploys a custom nginx image that I used Jenkins and Podman VM to build then push to docker.io
+# This is a yml manifest for deploying on kubernetes
 ---
 apiVersion: apps/v1
 kind: Deployment
