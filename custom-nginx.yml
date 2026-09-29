@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: docker.io/jsanderson104/stuff:my-nginx
+        image: docker.io/jsanderson104/stuff:v2
         ports:
         - containerPort: 9090
 ---
